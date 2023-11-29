@@ -1,0 +1,9 @@
+@font-face {
+    font-family: VT323;
+    src: url(/Users/yul/kennynahh.github.io/VT323-Regular.ttf);
+}
+body {
+    font-family: VT323;
+    font-size: large;
+    background-color: black;
+}
