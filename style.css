@@ -1,7 +1,4 @@
-@font-face {
-    font-family: VT323;
-    src: url(/Users/yul/kennynahh.github.io/VT323-Regular.ttf);
-}
+@import url('https://fonts.googleapis.com/css?family=VT323');
 body {
     font-family: VT323;
     font-size: large;
