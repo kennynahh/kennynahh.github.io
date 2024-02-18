@@ -1,5 +1,10 @@
 body {
     font-family: 'Roboto', sans-serif;
+    padding-top: 50px; /* Adjust this value to match the height of your nav bar */
+}
+h1 {
+    padding-top: 50px; /* Adjust this value to match the height of your nav bar */
+    margin-top: -50px; /* This may be necessary to offset the additional padding */
 }
 /* Style for the navigation bar */
 nav {
