@@ -1,7 +1,15 @@
-body {
+body,
+html {
     font-family: 'Chakra Petch', serif;
     background-color: #000000;
     color: #ffffff;
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+    background: #000;
+    /* Dark sky background */
 }
 
 .contact {
@@ -15,21 +23,28 @@ body {
 }
 
 .project {
-    flex-basis: calc(33.333% - 20px); /* Subtract some pixels for margin */
+    flex-basis: calc(33.333% - 20px);
+    /* Subtract some pixels for margin */
     margin: 10px;
-    color: black; /* Text color */
-    text-decoration: none; /* Remove underline from links */
+    color: black;
+    /* Text color */
+    text-decoration: none;
+    /* Remove underline from links */
     background: #fff;
     padding: 20px;
-    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: block;
 }
 
 .project img {
-    width: 100%; /* Full width of the container */
-    height: 500px; /* Fixed height */
-    object-fit: cover; /* Resize the image to maintain its aspect ratio while filling the container */
-    border-bottom: 1px solid #eee; /* Optional: adds a line below the thumbnail */
+    width: 100%;
+    /* Full width of the container */
+    height: 500px;
+    /* Fixed height */
+    object-fit: cover;
+    /* Resize the image to maintain its aspect ratio while filling the container */
+    border-bottom: 1px solid #eee;
+    /* Optional: adds a line below the thumbnail */
 }
 
 .project h3 {
@@ -46,14 +61,17 @@ body {
         flex-direction: row;
         flex-wrap: wrap;
     }
+
     .project {
-        flex-basis: calc(50% - 20px); /* Adjust the width for wrapping */
+        flex-basis: calc(50% - 20px);
+        /* Adjust the width for wrapping */
     }
 }
 
 @media (max-width: 600px) {
     .project {
-        flex-basis: 100%; /* Full width on very small screens */
+        flex-basis: 100%;
+        /* Full width on very small screens */
     }
 }
 
@@ -67,7 +85,7 @@ body {
     color: rgb(255, 255, 255);
 }
 
-/* Mouse over link */   
+/* Mouse over link */
 .contact:hover {
     color: rgb(205, 205, 205);
 }
