@@ -1,5 +1,78 @@
 body {
     font-family: 'Chakra Petch', serif;
     background-color: #000000;
-    color: #ffe9cf;
+    color: #ffffff;
+}
+
+.contact {
+    padding-left: 16px;
+}
+
+.container {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+
+.project {
+    flex-basis: calc(33.333% - 20px); /* Subtract some pixels for margin */
+    margin: 10px;
+    color: black; /* Text color */
+    text-decoration: none; /* Remove underline from links */
+    background: #fff;
+    padding: 20px;
+    box-shadow: 0 0 10px rgba(0,0,0,0.1);
+    display: block;
+}
+
+.project img {
+    width: 100%; /* Full width of the container */
+    height: 500px; /* Fixed height */
+    object-fit: cover; /* Resize the image to maintain its aspect ratio while filling the container */
+    border-bottom: 1px solid #eee; /* Optional: adds a line below the thumbnail */
+}
+
+.project h3 {
+    margin-top: 10px;
+}
+
+.project p {
+    margin-top: 5px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 960px) {
+    .container {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    .project {
+        flex-basis: calc(50% - 20px); /* Adjust the width for wrapping */
+    }
+}
+
+@media (max-width: 600px) {
+    .project {
+        flex-basis: 100%; /* Full width on very small screens */
+    }
+}
+
+/* Unvisited link */
+.contact:link {
+    color: rgb(255, 255, 255);
+}
+
+/* Visited link */
+.contact:visited {
+    color: rgb(255, 255, 255);
+}
+
+/* Mouse over link */   
+.contact:hover {
+    color: rgb(205, 205, 205);
+}
+
+/* Selected link */
+.contact:active {
+    color: rgb(255, 255, 255);
 }
