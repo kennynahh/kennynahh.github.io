@@ -1,2 +1,2 @@
 # Personal website
-kennynahh@github.io
+kennynahh.github.io
