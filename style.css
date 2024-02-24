@@ -1,55 +1,5 @@
-/* Reset default padding and margins for the nav and ul */
-nav, nav ul {
-    margin: 0;
-    padding: 0;
-}
-
-/* Full-width nav bar with fixed positioning */
-nav {
-    position: fixed;
-    top: 0;
-    left: 0; /* Ensure the nav starts from the very left edge */
-    width: 100%;
-    background-color: #11293c;
-    overflow: hidden;
-}
-
-/* Style for the list inside the navigation bar if you are using ul */
-nav ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    display: flex; /* This will horizontally align your nav elements */
-}
-
-/* Style for list items if your nav links are in a list */
-nav li {
-    display: inline; /* Change to inline-block if necessary */
-}
-
-/* Style for links */
-nav a {
-    float: left; /* Consider removing float if using flexbox on the ul */
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-/* Change the color of links on hover */
-nav a:hover {
-    background-color: #ddd;
-    color: black;
-}
-
-/* Body padding-top should be at least the height of the nav to avoid overlap */
 body {
-    font-family: 'Roboto', sans-serif;
-    padding-top: 50px; /* Adjust this value to match the height of your nav bar */
-}
-
-/* Remove additional padding and negative margin from h1 */
-h1 {
-/* if needed */
+    font-family: 'Chakra Petch', serif;
+    background-color: #000000;
+    color: #ffe9cf;
 }
