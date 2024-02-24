@@ -3,13 +3,7 @@ html {
     font-family: 'Chakra Petch', serif;
     background-color: #000000;
     color: #ffffff;
-    margin: 0;
-    padding: 0;
-    width: 100%;
-    height: 100%;
     overflow: hidden;
-    background: #000;
-    /* Dark sky background */
 }
 
 .contact {
