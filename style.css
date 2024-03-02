@@ -1,7 +1,8 @@
 body,
 html {
     font-family: 'Chakra Petch', serif;
-    background-color: #000000;
+    background: rgb(209,193,200);
+    background: radial-gradient(circle, rgba(209,193,200,1) 0%, rgba(128,150,176,1) 100%); 
     color: #ffffff;
     overflow: hidden;
 }
@@ -100,7 +101,7 @@ html {
 }
 
 .project img {
-    transition: transform 0.2s ease;
+    transition: transform 0.1s ease;
 }
 
 .project:hover h3,
