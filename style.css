@@ -88,3 +88,22 @@ html {
 .contact:active {
     color: rgb(255, 255, 255);
 }
+
+/* Add hover effect for project links */
+.project {
+    position: relative;
+    overflow: hidden;
+}
+
+.project:hover img {
+    transform: scale(0.975);
+}
+
+.project img {
+    transition: transform 0.2s ease;
+}
+
+.project:hover h3,
+.project:hover p {
+    background: #ffffff; /* Change color on hover */
+}
