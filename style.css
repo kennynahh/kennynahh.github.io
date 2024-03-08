@@ -1,11 +1,29 @@
-body,
-html {
+@keyframes gradientShift {
+    0% {
+      background-size: 100% 100%;
+      background-position: 0% 0%;
+    }
+    50% {
+      background-size: 200% 200%;
+      background-position: 100% 100%;
+    }
+    100% {
+      background-size: 100% 100%;
+      background-position: 0% 0%;
+    }
+  }
+  body,
+  html {
     font-family: 'Chakra Petch', serif;
     background: rgb(209,193,200);
-    background: radial-gradient(circle, rgba(209,193,200,1) 0%, rgba(128,150,176,1) 100%); 
+    background: radial-gradient(circle, rgb(209, 186, 196) 0%, rgba(128,150,176,1) 100%);
     color: #ffffff;
     overflow: hidden;
-}
+  
+    /* Apply the animation */
+    animation: gradientShift 45s infinite linear;
+  }
+  
 
 .contact {
     padding-left: 16px;
