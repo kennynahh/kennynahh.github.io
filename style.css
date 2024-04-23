@@ -15,13 +15,13 @@
   body,
   html {
     font-family: 'Chakra Petch', serif;
-    background: rgb(209,193,200);
-    background: radial-gradient(circle, rgb(209, 186, 196) 0%, rgba(128,150,176,1) 100%);
+    background: rgb(76,68,148);
+    background: radial-gradient(circle, rgba(76,68,148,1) 0%, rgba(50,160,163,1) 100%); 
     color: #ffffff;
     overflow: hidden;
   
     /* Apply the animation */
-    animation: gradientShift 45s infinite linear;
+    animation: gradientShift 30s infinite linear;
   }
   
 
