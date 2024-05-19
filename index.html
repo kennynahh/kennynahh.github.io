@@ -15,31 +15,35 @@
   </nav>
 </head>
 
-<body>
-  <h1 class="about">
-    about me
-  </h1>
-  <p>
-  <pre><code>
-            &lt;html&gt;
-              &lt;head&gt;
-                &lt;title&gt;
+  <body>
+    <h1 id="typing-effect" class="about">
+      <span>a</span><span id="dynamic-part"></span>
+    </h1>
+    <div class="content">
+      <pre><code class="text-content">
+        &lt;html&gt;
+          &lt;head&gt;
+            &lt;title&gt;
 
-                <b>Kenny Na - VR/AR, Systems Design Engineer</b>
+             <b>Kenny Na - VR/AR, Systems Design Engineer</b> 
 
-                &lt;/title&gt;
-              &lt;/head&gt;
-              &lt;body&gt;
-                &lt;h1&gt;Hello, world!&lt;/h1&gt;
-                &lt;p1&gt;
+             &lt;/title&gt;
+          &lt;/head&gt;
+          &lt;body&gt;
+            &lt;h1&gt; <b>Hello, world!</b> &lt;/h1&gt;
+            &lt;p&gt; 
 
-                <b>Hi! 👋 I'm Kenny. I work on VR/AR hardware,
-                as well as experimental spatial experiences.</b>
+            <b>Hi! 👋 I'm Kenny. I work on VR/AR hardware,
+            as well as experimental spatial experiences.</b>
 
-                &lt;/p1&gt;
-              &lt;/body&gt;
-            &lt;/html&gt;
-                </code></pre>
+            &lt;/p&gt;
+          &lt;/body&gt;
+        &lt;/html&gt;
+        </code></pre>
+      <div class="image">
+        <img src="assets/meme.jpeg" alt="meme">
+      </div>
+    </div>
   </p>
   <footer>
     <ul class="footer-links">
@@ -53,4 +57,25 @@
       <li><span class="icon">^V</span>Next Page</li>
     </ul>
   </footer>
+  <script>
+    const text = "bout me"; // Start from the second letter
+    const typingSpeed = 150; // milliseconds
+    let index = 0; // Start position of the text
+    const target = document.getElementById('dynamic-part'); // Target the dynamic part
+    target.classList.add("typing-cursor");
+  
+    function type() {
+      if (index < text.length) {
+        target.innerHTML += text.charAt(index); // Add next character to text
+        index++;
+        setTimeout(type, typingSpeed); // Wait before adding next character
+      } else {
+        target.classList.remove("typing-cursor"); // Optionally remove the cursor at the end
+      }
+    }
+  
+    window.onload = function() {
+      setTimeout(type, 500); // Start typing shortly after the page has loaded
+    };
+  </script>  
 </body>
