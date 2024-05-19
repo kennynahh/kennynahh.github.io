@@ -114,7 +114,7 @@ nav ul {
   }
 
 #typing-effect {
-    min-width: 50px;  /* Adjust width as needed to fit your full text */
-    display: inline-block; /* Keeps the width constant even when content is short */
-    white-space: nowrap;  /* Ensures text doesn't wrap and respects the width */
+    min-width: 500px;
+    display: inline-block;
+    white-space: nowrap;
 }
