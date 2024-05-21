@@ -56,7 +56,7 @@
         &lt;/html&gt;
         </code></pre>
       <div class="image">
-        <img src="assets/meme.jpeg" alt="meme">
+        <img src="assets/me.jpg" alt="me">
       </div>
     </div>
   </p>
@@ -73,24 +73,24 @@
     </ul>
   </footer>
   <script>
-    const text = "bout me"; // Start from the second letter
-    const typingSpeed = 150; // milliseconds
-    let index = 0; // Start position of the text
-    const target = document.getElementById('dynamic-part'); // Target the dynamic part
+    const text = "bout me";
+    const typingSpeed = 150; // ms
+    let index = 0;
+    const target = document.getElementById('dynamic-part');
     target.classList.add("typing-cursor");
   
     function type() {
       if (index < text.length) {
-        target.innerHTML += text.charAt(index); // Add next character to text
+        target.innerHTML += text.charAt(index);
         index++;
-        setTimeout(type, typingSpeed); // Wait before adding next character
+        setTimeout(type, typingSpeed);
       } else {
-        target.classList.remove("typing-cursor"); // Optionally remove the cursor at the end
+        target.classList.remove("typing-cursor");
       }
     }
   
     window.onload = function() {
-      setTimeout(type, 500); // Start typing shortly after the page has loaded
+      setTimeout(type, 500);
     };
   </script>  
 </body>
