@@ -7,7 +7,9 @@
         href="https://fonts.googleapis.com/css2?family=IBM+Plex+Mono:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;1,100;1,200;1,300;1,400;1,500;1,600;1,700&display=swap"
         rel="stylesheet">
     <link rel="stylesheet" href="../style.css">
+    <script src="../script_blog.js"></script>
     <title>Kenny Na - Blog</title>
+
     <nav>
         <li> GNU nano 19.5.2024 </li>
         <li> File: index.html </li>
@@ -16,22 +18,43 @@
 </head>
 
 <body>
-    <h1 class="about">
-        blog
-    </h1>
+    <h1 id="typing-effect" class="about">
+        <span>b</span><span id="dynamic-part"></span>
+      </h1>
     <p>
         work in progress!
     </p>
     <footer>
         <ul class="footer-links">
-            <li><a href="/blog/"><span class="icon">^G</span>Blog</a></li>
+            <li><a href="/../"><span class="icon">^G</span>Home</a></li>
             <li><a href="https://github.com/kennynahh"><span class="icon">^O</span>GitHub</a></li>
             <li><a href="#"><span class="icon">^R</span>LinkedIn</a></li>
             <li><a href="#"><span class="icon">^Y</span>Resume</a></li>
-            <li><a href="#"><span class="icon">^X</span>Exit</a></li>
-            <li><a href="#"><span class="icon">^J</span>Justify</a></li>
-            <li><a href="#"><span class="icon">^W</span>WhereIs</a></li>
-            <li><a href="#"><span class="icon">^V</span>Next Page</a></li>
+            <li><span class="icon">^X</span>Exit</li>
+            <li><span class="icon">^J</span>Justify</li>
+            <li><span class="icon">^W</span>WhereIs</li>
+            <li><span class="icon">^V</span>Next Page</li>
         </ul>
     </footer>
+    <script>
+        const text = "log";
+        const typingSpeed = 150; // ms
+        let index = 0;
+        const target = document.getElementById('dynamic-part');
+        target.classList.add("typing-cursor");
+
+        function type() {
+            if (index < text.length) {
+                target.innerHTML += text.charAt(index);
+                index++;
+                setTimeout(type, typingSpeed);
+            } else {
+                target.classList.remove("typing-cursor");
+            }
+        }
+
+        window.onload = function () {
+            setTimeout(type, 500);
+        };
+    </script>
 </body>
