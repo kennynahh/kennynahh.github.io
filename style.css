@@ -31,13 +31,14 @@ p {
   
   .image {
     flex-shrink: 0;
-    margin-right: 200px;
-  }
+    margin-right: 200px; 
+    text-align: center;
+}
   
   .image img {
-    width: 400px;
+    width: 320px;
     height: auto;
-    border: 8px solid #000;
+    border: 8px solid #bebbaf;
   }
 
 nav {
@@ -96,6 +97,10 @@ footer {
     color: #2b2b2b;
     font-size: 20px;
     margin-right: 5px;
+}
+
+a:visited {
+  color: inherit;
 }
 
 nav ul {
